@@ -1,0 +1,6 @@
+Bootstrap: docker
+From: registry.cern.ch/docker.io/cmssw/el7:x86_64
+
+%post
+    yum install -y vim-enhanced perl-core perl-CPAN perl-Sys-Syslog perl-Authen-Krb5 sssd-client cmake3 emacs gcc-gfortran boost boost-thread boost-devel f2py gfal2 gfal2-python gengetopt python3-devel autoconf libtool gsl-devel
+
